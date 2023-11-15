@@ -1,19 +1,17 @@
 <ion-content [fullscreen]="true" class="ion-padding">
   <ion-grid>
     <ion-row>
-      <ion-col style="background-image: url('../../assets/icon/background.png');">
+      <ion-col>
         <div [id]="section1" class="logoDiv">
-          <ion-icon src="assets/icon/trabalho-legal.svg" class="logo"></ion-icon>
+          <h1>[Logo]</h1>
         </div>
-        <ion-button class="buttonDefault" href="https://www.trabalholegal.com.br" target="_blank">retornar ao site</ion-button>
+        <ion-button class="buttonDefault" target="_blank">Va para o site que quiser</ion-button>
         <div class="landing-content">
-          <h1 style="white-space: nowrap;">Descubra se você ou seus clientes respondem a algum processo na justiça.</h1>
-          <p>Nossa equipe realiza pesquisas para verificar se um CNPJ ou CPF possui processos em andamento junto aos
-            órgãos
-            públicos competentes.</p>
+          <h1 style="white-space: nowrap;">[Texto principal]</h1>
+          <p>[Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.]</p>
           <ion-button class="buttonDefault" (click)="scrollToElement(section2)" size="large">
             <ion-icon slot="end" name="arrow-forward"></ion-icon>
-            Saiba mais
+            [botão para outra sessão]
           </ion-button>
         </div>
       </ion-col>
@@ -21,17 +19,16 @@
     <ion-row style="margin-top: 9%;">
       <ion-col size="12" size-md="6">
         <div class="landing-content left-align">
-          <p style="color: #32EAA5; font-weight: 800; font-size: 1.2rem;">São apenas 3 passos. É fácil, rápido e seguro.</p>
-          <h1 style="font-size: 2.5rem;">Receba o relatório de pesquisa em até 24h</h1>
+          <p style="color: #32EAA5; font-weight: 800; font-size: 1.2rem;">[text]</p>
+          <h1 style="font-size: 2.5rem;">[text]</h1>
         </div>
       </ion-col>
       <ion-col size="12" size-md="6">
         <div class="landing-content left-align">
-          <p style="line-height: 1.75rem;">Você receberá em seu e-mail certidões oficiais, emitidas pelos órgãos públicos competentes, informando se
-            o CNPJ/CPF informado possui ou não processos trabalhistas ou tributários federais.</p>
+          <p style="line-height: 1.75rem;">[Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the].</p>
           <ion-button class="buttonDefault" size="large">
             <ion-icon slot="end" name="arrow-forward"></ion-icon>
-            Entenda
+            button
           </ion-button>
         </div>
       </ion-col>
@@ -46,7 +43,7 @@
     <ion-row class="ion-row-center" style="margin-top: 9%;">
       <ion-col size="12" size-md="6">
         <div>
-          <h1 style="text-align: center;">Oferecemos ótimos <span style="color: #32EAA5;">planos</span> para garantir seu monitoramento.</h1>
+          <h1 style="text-align: center;">[text]<span style="color: #32EAA5;">[text]</span>[text]</h1>
           <div class="logoDiv" style="margin-top: 9%; justify-content: center;">
             <app-toggle-plan (planChange)="onPlanChange($event)"></app-toggle-plan>
             <ion-icon src="assets/icon/desconto.svg" class="logoDesconto"></ion-icon>
@@ -68,11 +65,10 @@
         <div>
           <p style="font-size: 2rem; font-family: poppins; font-weight: 700;">
             <ion-text>
-              Os <ion-text style="color: #32EAA5;">benefícios</ion-text> são inúmeros:
+              [text]<ion-text style="color: #32EAA5;">[text]</ion-text>[text]
             </ion-text>
           </p>
-          <h3 style="color: #627065; margin: 0 20%;">Tenha as informações no momento certo,
-            se proteja de problemas futuros que podem custar muito caro !</h3>
+          <h3 style="color: #627065; margin: 0 20%;">[Lorem Ipsum is simply dummy text of the printing and typesetting industry.]</h3>
         </div>
       </ion-col>
     </ion-row>
@@ -86,7 +82,7 @@
     <ion-row>
       <ion-col class="faq">
         <h3>
-          FAQ
+          [text]
         </h3>
         <app-faq-list [faqs]="faqs"></app-faq-list>
 
@@ -97,26 +93,26 @@
       <ion-row>
         <ion-col>
           <div>
-            <h1>Comece sua pesquisa:</h1>
-            <p>Preencha as informações abaixo e inicie sua pesquisa!</p>
+            <h1>Start your reserch</h1>
+            <p>fill the inputs</p>
           </div>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col size="12" size-md="6">
           <div>
-            <h3>Informações pessoais</h3>
+            <h3>Personal informations</h3>
             <app-form-registration-plan [meuForm]="meuForm" [fields]="fields">
             </app-form-registration-plan>
             <ion-button class="buttonDefault" style="margin-top: 4%;" (click)="sendEmail(meuForm)">
-              pesquisar
+              search
             </ion-button>
             
           </div>
         </ion-col>
         <ion-col style="display: flex; justify-content: center;" size="12" size-md="6">
           <div>
-            <h3 style="font-weight: 600;">Contrate o plano personalizado:</h3>
+            <h3 style="font-weight: 600;">[text]</h3>
             <ion-button class="buttonDefault">
               WHATSAPP
             </ion-button>
@@ -127,28 +123,25 @@
       <ion-row>
         <ion-col size="12" size-md="6">
           <div class="landing-content left-align">
-            <p style="color: #32EAA5; font-weight: 600;">Fique de olho!</p>
-            <h1>Mantenha-se por dentro de atualizações!</h1>
+            <p style="color: #32EAA5; font-weight: 600;">[text]</p>
+            <h1>[text]</h1>
             <div class="">
               <ion-icon src="assets/icon/lineGreen.svg" class="lineGreen"></ion-icon>
             </div>
 
           <div class="card-content">
             <ion-input aria-label="Primary input" color="dark" placeholder="E-mail"></ion-input>
-            <ion-button class="buttonDefault">Inscrever</ion-button>
+            <ion-button class="buttonDefault">Sign in</ion-button>
           </div>
         </div>
       </ion-col>
       <ion-col size="12" size-md="6">
         <div class="landing-content left-align">
           <p style="text-align: right;">
-            Ajudamos você na gestão de sua empresa e de seus colaboradores
-            com soluções assertivas, rapidez e tecnologia otimizada.
-            Contamos com uma equipe multidisciplinar para oferecer soluções online nas
-            áreas de direito trabalhista, tributário, contratual e empresarial.</p>
+           [Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the i]</p>
         </div>
         <div style="width: 100%; display: flex; justify-content: end;">
-          <ion-icon src="assets/icon/trabalho-legal.svg" class="logo"></ion-icon>
+          <h1>Logo</h1>
         </div>
       </ion-col>
     </ion-row>
