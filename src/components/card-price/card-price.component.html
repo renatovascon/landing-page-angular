@@ -1,0 +1,24 @@
+<div class="cards-container">
+  <ion-text class="recomendacao" *ngIf="title === 'Anual'">
+    Recomendado
+  </ion-text>
+
+  <ion-card class="expanding-card" [class.active]="title === 'Anual' || title === 'Personalizado'" [ngClass]="{'expanded': openText }">
+    <ion-card-header>
+      <ion-card-title [style.color]="titleColor">{{ title }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{ content }}
+    </ion-card-content>
+    <div class="alinhaPreco">
+      <p class="moeda">{{ moeda }}</p>
+      <p class="preco">{{ price }}</p>
+      <p class="time">{{ time }} </p>
+    </div>
+    <div *ngIf="openText" [innerHTML]="textSaibaMais"></div>
+
+    <ion-button (click)="resetCardSize()" [class.active]="title === 'Anual'" class="buttonDefault" >
+      {{ buttonText }}
+    </ion-button>
+  </ion-card>
+</div>

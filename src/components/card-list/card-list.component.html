@@ -1,0 +1,13 @@
+<div class="card" [class.active]="subtitleSecundary === 'Empresas'">
+  <ion-card-header>
+    <ion-card-subtitle>
+      <span style="font-weight: 600; color: rgba(28, 28, 28, 1)">{{ subtitileFirst }}</span><span style="color: #32EAA5; font-weight: 600;">{{ subtitleSecundary }}</span>
+    </ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content *ngFor="let txt of text">
+    <p>
+      <ion-icon [name]='txt.nameIcon' size="large"></ion-icon>
+      <ion-text> {{ txt.content }}</ion-text>
+    </p>
+  </ion-card-content>
+</div>

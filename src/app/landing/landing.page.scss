@@ -1,0 +1,130 @@
+// variaveis.scss ou outro arquivo scss
+@import "../../theme/mixins";
+
+ion-grid {
+  padding: 0 6%;
+}
+
+h1 {
+  font-family: Poppins;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: left;
+  @include responsive(xs) {
+    width: 18rem;
+    display: inline;
+  }
+  
+}
+
+p {
+  font-family: Poppins;
+}
+
+
+app-toggle-plan{
+  display: flex;
+  justify-content: center;
+}
+
+.link-estilizado {
+  text-decoration: none; /* Remove o sublinhado */
+  color: black; /* Define a cor do texto para preto */
+}
+
+.cards {
+  @include responsive(md) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.landing-content {
+  text-align: left;
+  padding: 1.25rem;
+  .card-content {
+    display: flex;
+    @include responsive(xs) {
+      flex-direction: column;
+    }
+  }
+}
+
+.landing-content-initial >p {
+  font-family: Poppins;
+  font-size: 1.4rem;
+}
+
+
+.logoDiv {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  .logo {
+    width: 18.7rem;
+    height: 12.5rem;
+  }
+  .logoDesconto{
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+    top: -2rem;
+    // margin-top: 4%;
+  }
+}
+
+.pageForms {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 1.6rem;
+  padding: 2rem;
+  margin-top:9%;
+}
+
+
+.ion-row-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  @include responsive(md) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+// .buttonInscrever::part(native) {
+//   color: black;
+//   background-color: #32EAA5;
+// }
+.buttonDefault::part(native) {
+  color: black;
+  background-color: #32EAA5;
+}
+
+
+.faq {
+  font-size: x-large;
+  @include responsive(md) {
+    position: relative;
+    top: 6rem;
+  }
+
+}
+
+.logo {
+  width: 17rem;
+  height: 8rem;
+  display: flex;
+}
+
+.lineGreen {
+  width: 17rem;
+}
+
+.cardPrice {
+  @extend .ion-row-center;
+  align-items: flex-start !important;
+}
+

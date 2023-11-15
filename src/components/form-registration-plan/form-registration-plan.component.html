@@ -1,0 +1,20 @@
+<!-- form-registration-plan.component.html -->
+<form [formGroup]="meuForm">
+  <ng-container *ngFor="let field of fields">
+    <ng-container *ngIf="field.type === 'input'">
+      <ion-input class="input" [name]="field.name" [formControlName]="field.control" [placeholder]="field.placeholder" style="margin-bottom: 4%;">
+      </ion-input>
+    </ng-container>
+    <ng-container *ngIf="field.type === 'select'">
+      <p *ngIf="field.type === 'select'">
+        {{ field.subtitle }}
+      </p>
+      <ion-select class="always-flip" toggleIcon="caret-down-sharp" mode="ios" [formControlName]="field.control"
+        [interface]="field.interface" [label]="field.label">
+        <ion-select-option *ngFor="let option of field.options" [value]="option.value">
+          {{ option.label }}
+        </ion-select-option>
+      </ion-select>
+    </ng-container>
+  </ng-container>
+</form>

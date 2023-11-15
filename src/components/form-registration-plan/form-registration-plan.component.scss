@@ -1,0 +1,21 @@
+ion-select.always-flip::part(icon) {
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.always-flip {
+  border: 1px solid #ccc;
+  border-radius: 0.8rem;
+  padding: 0 0.5rem;
+}
+
+.input {
+  @extend .always-flip;
+  padding-left: 0.5rem !important;
+}
+
+ion-select.always-flip.select-expanded::part(icon) {
+  transform: rotate(180deg);
+}
+
+ion-select.never-flip::part(icon) {
+  transform: none;
+}

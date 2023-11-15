@@ -1,0 +1,11 @@
+<ion-list>
+  <div *ngFor="let faq of faqs">
+    <ion-item (click)="toggleAnswer(faq)">
+      {{ faq.question }}
+      <img slot="end"
+        [src]="faq.showAnswer ? '../assets/icon/duplo-para-cima.png' : '../assets/icon/duplo-para-baixo.png'"
+        alt="Ícone de direção">
+    </ion-item>
+    <div *ngIf="faq.showAnswer" [innerHTML]="faq.answer"></div>
+  </div>
+</ion-list>
